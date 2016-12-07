@@ -1,0 +1,21 @@
+<br><br>
+<div class="row">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index">
+        <td>{{user.id}}</td>
+        <td>
+          <a routerLink="/users/{{user.id}}">{{user.name}}</a>
+        </td>
+        <td>{{user.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
